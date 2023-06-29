@@ -3547,6 +3547,44 @@ input, select, textarea {
 		}
 
 	}
+    
+/* Email popup */
+    
+    .popup-email {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            padding: 0px;
+            background-color: #333;
+            color: #fff;
+            opacity: 0;
+            text-align: center;
+            transition: opacity 1s;
+            animation-name: fadeAndSlideIn;
+            animation-duration: 3s; /* Adjust the duration as needed */
+            animation-fill-mode: forwards;
+        }
+
+        /* Animation for fading and sliding in */
+        @keyframes fadeAndSlideIn {
+            0% {
+                opacity: 0;
+                top: -100%;
+            }
+            10% {
+                opacity: 1;
+                top: 0;
+            }
+            90% {
+                opacity: 1;
+                top: 0;
+            }
+            100% {
+                opacity: 0;
+                top: -100%;
+            }
+        }
 
 /* Wrapper */
 
